@@ -1,0 +1,81 @@
+/*********************/
+/* MAIN */
+/*********************/
+main{
+    margin: 0 auto;
+    width: 90%;
+    /*padding: 10px;*/
+}
+.section1,
+.section2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section1 .sectionTitle,
+.section2 .sectionTitle{
+    color: var(--color-gris-oscuro);
+    margin-bottom: 15px;
+    width: 100%;
+}
+section .card{    
+    background-color: white;
+    margin-bottom: 10px;
+    justify-content: center;    
+}
+.product-characteristics{
+    border-top: solid 1px var(--color-gris-claro);
+    padding: 15px;
+    position: relative;
+}
+.truck{
+    /*Este es el camino corto del profe*/
+    /*Ventaja: menos codigo y el circulo se mantiene aunque cambie el tamaño de pantalla*/
+    color: var(--color-verde);
+    border: solid 1px var(--color-verde);    
+    width: fit-content; /*--se ajusta al contenido-- deja como ancho, solo el tamaño del contenido*/
+    padding: 10px;
+    border-radius: 50%;
+    /*position*/
+    position: absolute;
+    right: 25px;
+    top: -20px;
+        
+
+    /*Asi lo hize por mi cuenta*/ 
+
+    /* color: var(--color-verde);
+    font-size: 13px;
+    text-align: center;
+    margin-right: 85%;
+    padding: 4%;
+    border: solid 1px var(--color-verde);
+    border-radius: 100px; */
+}
+.card .price{
+    font-size:var(--size-precios);
+}
+.card .discount{
+    font-size: var(--size-descuentos-descripciones);
+    color: var(--color-verde);
+}
+.card .product-name{
+    display: none;
+    font-size: var(--size-descuentos-descripciones);
+    color: var(--color-gris-oscuro);
+    margin-top: 20px;
+}
+.section1 .card .product-info,
+.section2 .card .product-info{
+    display: flex;
+}
+.section1 .card .product-info p:nth-child(1),
+.section2 .card .product-info p:nth-child(1){
+    flex-grow: 0.30;
+}
+.section1 .card .product-info p:nth-child(2),
+.section2 .card .product-info p:nth-child(2){
+    flex-grow: 0.70;
+    align-self: center;
+}
+

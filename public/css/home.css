@@ -1,0 +1,31 @@
+/*banner*/
+.banner{
+    display: none;
+}
+
+/***********MEDIA QUERIES***********/
+/*TABLET*/
+@media(min-width:768px){
+    /*banner*/
+    .banner{
+        display: block;
+    }
+    /*********************/
+    /* MAIN */
+    /*********************/
+    section .card{
+        box-shadow:0px 0px 10px rgb( 100 , 100 , 100 );
+        width: 49%;
+    }
+    .card .product-name{
+        display: block;
+    }   
+}
+
+/*DESKTOP*/
+@media(min-width:1024px){    
+    section .card{
+        box-shadow:0px 0px 10px rgb( 100 , 100 , 100 );
+        width: 24%;
+    }
+}

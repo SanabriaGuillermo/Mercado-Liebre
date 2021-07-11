@@ -1,0 +1,122 @@
+/*********************/
+/* HEADER */
+/*********************/
+header{
+    background-color: var(--color-amarillo);
+    font-size: var(--size-texto);
+    padding-bottom: 10px;
+    /* display: flex;    
+    flex-direction: column; */
+}
+.logo-and-searchBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+header #logo{
+    width: 130px;
+    align-self: flex-start;
+    flex-grow: 0.5;
+    padding: 10px;
+}
+header .search-bar{    
+    border-radius: 5px;    
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    width: 150px;
+    height: 32px;
+    flex-grow: 0.5;       
+}
+header .search-bar input{
+    border: none;
+    flex-grow: 0.9;
+    width: 90%;    
+}
+header .search-bar button{
+   background-color: white;
+   color: var(--color-gris-oscuro);
+   flex-grow: 0.1;
+   border: none;
+   /*position: relative;
+   right: -158px;
+   top: -13px; */
+}
+
+.nav-bar{
+    display: none;
+}
+header p{    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.top-list1,
+.top-list2{
+    margin-bottom : 10px;
+}
+
+.burger-menu{    
+    background-color: var(--color-celeste);    
+    padding: 8px;
+    width: 30px;
+    color: white;
+    border-radius: 5px;
+    margin: 20px auto 0 auto;
+    text-align: center;              
+}
+
+/***********MEDIA QUERIES***********/
+/*TABLET*/
+@media(min-width:768px){
+    /*********************/
+    /* HEADER */
+    /*********************/
+    .header-superior{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo-and-searchBar{
+        flex-grow: 0.8;
+    }
+    .header-superior p{
+        flex-grow: 0.3;
+        align-self: center;
+    }
+    header #logo{
+        width: 140px;       
+        flex-grow: 0.7;
+        padding: 10px;
+        margin-right: 20px;
+    }
+    header .search-bar{
+        flex-grow: 0.3;       
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+    }
+    .top-list1{
+        display: flex;
+        flex-grow: 0.2;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+    .top-list2{
+        display: flex;
+        justify-content: space-evenly;
+        flex-grow: 0.3;
+        align-items: flex-end;
+    }
+    .burger-menu{ 
+        display: none;                  
+    }  
+}
+/*DESKTOP*/
+@media(min-width:1180px){    
+
+}
